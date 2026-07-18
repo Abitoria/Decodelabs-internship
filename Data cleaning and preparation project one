@@ -1,0 +1,24 @@
+## Project 1: Data Cleaning & Preparation
+
+### Problem Statement
+The raw sales dataset needed to be checked for missing values, duplicate records, and formatting inconsistencies before any analysis could be trusted. The goal was to get it to a zero-error standard: no duplicate identifiers and no invalid dates.
+
+### Methodology
+I inspected the dataset for missing values, duplicates, and formatting issues, then addressed each one found and re-verified the result.
+
+### Key Findings & Actions
+
+1. **Missing values in CouponCode.** 309 of 1,200 rows (about 26%) had no coupon code recorded. Rather than deleting these rows, which would have thrown away a quarter of the dataset for no good reason, I treated the missing values as a legitimate category: orders where no coupon was used. I filled them with the label `"No Coupon"`.
+
+2. **Whitespace inconsistencies.** Stripped leading and trailing whitespace from every text column to prevent hidden mismatches when filtering, grouping, or joining data later (for example `"Email "` being treated differently from `"Email"`).
+
+3. **Duplicate check.** Checked for duplicates at two levels: full row duplicates and duplicate `OrderID` values. Both came back at 0, so no rows needed to be removed.
+
+4. **Date validity check.** Confirmed the `Date` column is a proper datetime type with 0 missing or malformed entries.
+
+5. **Pricing consistency check.** Cross-checked `Quantity × UnitPrice` against `TotalPrice` for every row. Found 0 mismatches, confirming the pricing data is internally consistent.
+
+### Outcome
+The cleaned dataset (`cleaned_Dataset_for_Data_Analytics.xlsx`) contains all 1,200 original records with no data loss, no duplicate identifiers, no missing critical values, and no formatting inconsistencies.
+
+---
