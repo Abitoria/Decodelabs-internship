@@ -26,7 +26,7 @@ print(df['CouponCode'].isna().sum())
 print(df['CouponCode'].value_counts())
 
 # Count how many rows have a coupon code vs not
-# . Strip whitespace from all text columns
+# Strip whitespace from all text columns
 text_cols = df.select_dtypes(include='object').columns
 for col in text_cols:
     df[col] = df[col].str.strip()
@@ -36,6 +36,6 @@ print("Invalid dates:", df['Date'].isna().sum())
 print("Duplicate rows after cleaning:", df.duplicated().sum())
 print("Duplicate OrderIDs after cleaning:", df['OrderID'].duplicated().sum())
 
-#  Save the cleaned dataset
+#  saved clean data set
 df.to_excel("cleaned_Dataset_for_Data_Analytics.xlsx", index=False)
 print("Cleaned file saved!")
