@@ -22,7 +22,7 @@ print(df[df['CouponCode'].isna()])
 df['CouponCode'] = df['CouponCode'].fillna('No Coupon')
 
 
-print(df['CouponCode'].isna().sum())  # should be 0
+print(df['CouponCode'].isna().sum())  
 print(df['CouponCode'].value_counts())
 
 # Count how many rows have a coupon code vs not
