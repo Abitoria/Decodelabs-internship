@@ -1,16 +1,15 @@
 # data cleaning with decode lab
-import pandas as pd  # import pandas library
+import pandas as pd  
 
 df = pd.read_excel(
-    # import the data set
     r"C:\Users\Administrator\Desktop\copy_Dataset for Data Analytics.xlsx")
 
-print(df.head())  # first five lines of the data
+print(df.head())  
 
-# inspect the data(1200 observation and 14 variables)
+# inspect the data
 print(df.info())
 print(df.isnull().sum())
-print(df.duplicated().sum())      # check for duplicate
+print(df.duplicated().sum())      
 
 # check the column with the empty data set
 print(df['CouponCode'].unique())
