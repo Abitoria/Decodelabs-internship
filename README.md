@@ -24,7 +24,7 @@ The goal was to explore the cleaned sales dataset (1,200 orders, 14 variables) t
 ### Methodology
 I ran descriptive statistics on all numeric fields, plotted distributions and category breakdowns, checked revenue over time, tested for outliers using the IQR method, and looked at correlations between variables.
 ### Key Findings
-1. **Order sizes are consistent, not skewed.** Quantity ranges from 1 to 5 per order and is spread fairly evenly, so there's no single "typical" order size dominating the data. This means average-based metrics (like mean quantity) are safe to use without being thrown off by extreme values.
+1. **Order sizes are consistent, not skewed.** Quantity ranges from 1 to 5 per order and is spread fairly evenly, so there's no single "typical" order size dominating the data. This means  average based metrics (like mean quantity) are safe to use without being thrown off by extreme values.
 
 2. **TotalPrice has 8 outliers, all on the high end.** These are orders above roughly $3,330. That's under 1% of all orders, but they're worth a manual look, since they could be bulk purchases, VIP customers, or possibly a pricing error worth flagging to the business.
 
@@ -36,6 +36,6 @@ I ran descriptive statistics on all numeric fields, plotted distributions and ca
 6. **Order value is driven more by unit price than quantity.** `TotalPrice` correlates more strongly with `UnitPrice` (0.72) than with `Quantity` (0.62). In plain terms: what customers buy matters more to revenue than how many units they buy. Laptop orders bring in the highest average revenue per order; Phones the lowest.
 
 ### Recommendations
-- Manually review the 8 high-value outlier orders to confirm they're legitimate.
+- Manually review the 8 highv alue outlier orders to confirm they're legitimate.
 - Investigate the root cause of the 21% cancellation rate, since reducing it even slightly would directly recover revenue.
-- Since order value is driven by product mix more than order size, consider strategies that shift customers toward higher-value products (like Laptops) rather than just encouraging larger cart sizes.
+- Since order value is driven by product mix more than order size, consider strategies that shift customers toward higher value products (like Laptops) rather than just encouraging larger cart sizes.
