@@ -15,23 +15,23 @@ This project addresses these gaps by cleaning raw sales logs and performing expl
 ## 📊 Visualizations & Chart References
 
 ### 1. Revenue & Pricing Outliers
-![Boxplots](charts/boxplots.png)
+![Boxplots](boxplots.png)
 *Used for identifying high end pricing and revenue outliers via the IQR method.*
 
 ### 2. Numeric Distributions
-![Numeric Distributions](charts/numeric_distributions.png)
+![Numeric Distributions](numeric_distributions.png)
 *Illustrates the spread and consistency of order sizes and quantities.*
 
 ### 3. Categorical Breakdowns
-![Categorical Breakdowns](charts/categorical_breakdowns.png)
+![Categorical Breakdowns](categorical_breakdowns.png)
 *Displays the balanced distribution across products, payment methods, and referral sources.*
 
 ### 4. Monthly Sales Trend
-![Monthly Sales Trend](charts/monthly_sales_trend.png)
+![Monthly Sales Trend](monthly_sales_trend.png)
 *Tracks monthly revenue movements over time to evaluate seasonality.*
 
 ### 5. Correlation Heatmap
-![Correlation Heatmap](charts/correlation_heatmap.png)
+![Correlation Heatmap](correlation_heatmap.png)
 *Highlights relationships between variables, showing a stronger correlation between total price and unit price than quantity.*
 
 ## 💡 Key Findings & Insights
