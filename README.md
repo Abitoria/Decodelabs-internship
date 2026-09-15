@@ -1,4 +1,4 @@
-###  DecodeLabs Data Analytics Internship
+###  Sales Trend and Correlation Analysis
 
 **Analyst:** Olawoyin Olufunmilayo Esther
 
